@@ -35,7 +35,7 @@ node(label) {
         sh "kubectl version"
         sh "kubectl delete ns eshop"
         sh "kubectl create ns eshop"
-        //sh "cd ~ && git clone https://github.com/hbstarjason/dotnet-architecture -b dev"
+        sh "cd ~ && git clone https://github.com/hbstarjason/dotnet-architecture -b dev"
         //sh "cd ~/dotnet-architecture/helm/"
 	//sh "cd /home/jenkins/dotnet-architecture/helm/"
 	sh "sleep 3600"      
