@@ -35,8 +35,8 @@ node(label) {
         sh "kubectl version"
         sh "kubectl delete ns eshop"
         sh "kubectl create ns eshop"
-        sh "cd ~ && git clone https://github.com/hbstarjason/dotnet-architecture -b dev"
-		    sh "cd ~/dotnet-architecture/helm/"
+        //sh "cd ~ && git clone https://github.com/hbstarjason/dotnet-architecture -b dev"
+        //sh "cd ~/dotnet-architecture/helm/"
         sh "./deploy-all.sh --skip-image-build --skip-image-push  --tag dev --dns aebb2a74c60f011e989f40282715a665-17894795.us-east-2.elb.amazonaws.com"
   
       }
